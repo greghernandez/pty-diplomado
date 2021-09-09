@@ -1,0 +1,7 @@
+type Room implements Node {
+    id: ID! @id
+    name: String!
+    seatings: [String!]!
+    createdAt: DateTime! @createdAt
+    updatedAt: DateTime! @updatedAt
+}

@@ -1,0 +1,6 @@
+type Genre implements Node {
+    id: ID! @id
+    name: String!
+    createdAt: DateTime! @createdAt
+    updatedAt: DateTime! @updatedAt
+}

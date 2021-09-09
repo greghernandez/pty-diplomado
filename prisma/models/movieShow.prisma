@@ -1,0 +1,9 @@
+type MovieShow implements Node{
+    id: ID! @id
+    movie: Movie! @relation(link: INLINE)
+    movieTime: DateTime!
+    room: Room! @relation(link: INLINE)
+    availabilitySeatings: [String]
+    createdAt: DateTime! @createdAt
+    updatedAt: DateTime! @updatedAt
+}

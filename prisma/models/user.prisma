@@ -1,8 +1,9 @@
-type User {
+type User implements Node {
   id: ID! @id
   createdAt: DateTime! @createdAt
   updatedAt: DateTime! @updatedAt
   email: String! @unique
   password: String
   name: String!
+  points: Int!
 }

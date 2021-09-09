@@ -1,0 +1,11 @@
+type Movie implements Node {
+    id: ID! @id
+    title: String! @unique
+    poster: String!
+    originalLanguage: String!
+    genre: Genre! @relation(link: INLINE)
+    clasification: String!
+    duration: Int!
+    createdAt: DateTime! @createdAt
+    updatedAt: DateTime! @updatedAt
+}
