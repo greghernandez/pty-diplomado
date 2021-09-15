@@ -2,10 +2,28 @@ type Movie implements Node {
     id: ID! @id
     title: String! @unique
     poster: String!
-    originalLanguage: String!
+    originalLanguage: Language!
     genre: Genre! @relation(link: INLINE)
-    clasification: String!
+    clasification: TypeClasification!
     duration: Int!
     createdAt: DateTime! @createdAt
     updatedAt: DateTime! @updatedAt
+}
+
+enum Language {
+  ENGLISH,
+  SPANISH,
+  SPANISH_LATIN_AMERICA,
+  FRENCH,
+  ITALIAN,
+  GERMAN,
+  PORTUGUESE,
+}
+
+enum TypeClasification{
+  PG,
+  PGTRECE,
+  R,
+  NC,
+  UNRATED
 }

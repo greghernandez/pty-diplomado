@@ -18,6 +18,6 @@ export default {
    * Delete a genre
    */
   deleteGenre (parent, args: { where: GenreWhereUniqueInput } , ctx: Context) {
-    return ctx.prisma.deleteGenre({ id: args.where.id})
+    return ctx.prisma.deleteGenre({ id: args.where.id })
   }
 }
