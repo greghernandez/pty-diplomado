@@ -3,7 +3,7 @@ type Ticket {
     movie: Movie! @relation(link: INLINE)
     MovieShow: MovieShow! @relation(link: INLINE)
     seating: String!
-    room: Room! @relation(link: INLINE)
+    room: Room! @relation(link: INLINE) 
     user: User! @relation(link: INLINE)
     cost: Float!
     payMethod: PaymentType!

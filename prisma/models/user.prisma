@@ -3,8 +3,8 @@ type User implements Node {
   createdAt: DateTime! @createdAt
   updatedAt: DateTime! @updatedAt
   email: String! @unique
-  password: String
+  password: String!
   name: String!
   points: Int
-  token: String! @unique
+  token: String @unique
 }
