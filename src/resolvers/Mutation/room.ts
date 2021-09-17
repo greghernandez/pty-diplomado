@@ -6,7 +6,6 @@ export default {
    * Create a new room
    */
   createRoom: (parent, { data } : { data: RoomCreateInput }, ctx: Context) => {
-    console.log(data)
     return ctx.prisma.createRoom(data)
   },
 

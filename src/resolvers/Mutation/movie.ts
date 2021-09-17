@@ -6,7 +6,6 @@ export default {
    * Create a new movie
    */
   createMovie: (parent, { data }: { data: MovieCreateInput}, ctx: Context) => {
-    console.log(data)
     return ctx.prisma.createMovie(data)
   },
 
