@@ -7,4 +7,11 @@ type User implements Node {
   name: String!
   points: Int
   token: String @unique
+  # role: TypeRole!
 }
+
+# enum TypeUser {
+#   ADMIN
+#   EMPLOYEE
+#   CUSTOMER
+# }
